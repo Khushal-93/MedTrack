@@ -1,39 +1,28 @@
 {
-  "name": "medishield",
-  "version": "1.0.0",
+  "name": "medishield-next",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "db:push": "prisma db push",
-    "db:seed": "prisma db seed",
-    "test:backend": "tsx scripts/verify-backend.ts"
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "^14.2.0",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
-    "@prisma/client": "^5.12.0",
-    "qrcode.react": "^3.1.0",
-    "html5-qrcode": "^2.3.8",
-    "lucide-react": "^0.368.0",
-    "clsx": "^2.1.0",
-    "tailwind-merge": "^2.2.2"
+    "lucide-react": "^1.33.0",
+    "next": "14.2.35",
+    "qrcode.react": "^4.2.0",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5.4.0",
-    "@types/node": "^20.12.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "prisma": "^5.12.0",
-    "tsx": "^4.7.0",
-    "tailwindcss": "^3.4.0",
-    "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0"
-  },
-  "prisma": {
-    "seed": "tsx prisma/seed.ts"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
