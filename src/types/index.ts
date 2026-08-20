@@ -1,3 +1,9 @@
+// ============================================================
+// MediShield — Shared TypeScript Interfaces
+// Created by Person 1 as temporary types.
+// Person 2 / Person 3 should replace/extend this file.
+// ============================================================
+
 export interface PatientProfile {
   id: string;
   healthId: string;
@@ -31,4 +37,23 @@ export interface MedicationItem {
   endDate?: string | null;
   status: "ACTIVE" | "DISCONTINUED" | "COMPLETED";
   prescribedBy: string;
+}
+
+export interface SafetyCheckRequest {
+  patientId: string;
+  newDrugName: string;
+  dosage?: string;
+}
+
+export interface SafetyAlert {
+  riskLevel: "HIGH" | "MEDIUM" | "LOW" | "NONE";
+  conflictType:
+    | "DRUG_DRUG"
+    | "ALLERGY"
+    | "DUPLICATE"
+    | "CONTRAINDICATION"
+    | "NONE";
+  conflictingItem: string;
+  reason: string;
+  clinicalAction: string;
 }
